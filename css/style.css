@@ -33,3 +33,8 @@ body,
 .quote-img {
   display: flex;
 }
+
+.next-share {
+  align-self: center;
+  margin-top: 30px;
+}
