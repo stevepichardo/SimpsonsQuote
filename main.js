@@ -1,16 +1,17 @@
-const paragraph = document.querySelector('#quoteSaying');
-const authorParagraph = document.querySelector('#quoteAuthor');
-const getQuoteBtn = document.querySelector('#getNew');
+const paragraph = document.getElementById('quoteSaying');
+const authorParagraph = document.getElementById('quoteAuthor');
+const getQuoteBtn = document.getElementById('getNew');
+const characterImage = document.getElementById('characterImg');
 
 function getQuote() {
   axios
     .get('https://thesimpsonsquoteapi.glitch.me/quotes')
     .then(function(response) {
-      const { quote, character, img } = response.data[0];
+      const { quote, character, image } = response.data[0];
 
       paragraph.innerHTML = quote;
       authorParagraph.innerHTML = `- ${character}`;
-      console.log(quote);
+      characterImage.src = image;
     })
     .catch(function(error) {
       console.log(error);
