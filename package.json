@@ -1,0 +1,22 @@
+{
+  "name": "quote-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevepichardo/SimpsonsQuote.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevepichardo/SimpsonsQuote/issues"
+  },
+  "homepage": "https://github.com/stevepichardo/SimpsonsQuote#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
