@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     <link rel="stylesheet" href="vendors/css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <h1>Simpsons Quote Generator</h1>
+    <img id="main-img" src="image/download.svg" alt="">
     <div class="row">
         <div class="quote-container">
-            <div class="quote-img">
+            <div class="quote-img hidden">
                 <div class="quote-author">
                     <p id="quoteSaying"></p>
                     <p id="quoteAuthor"></p>
                 </div>
                 <img id="characterImg" src="Bart_Simpson.png" alt="">
             </div>
+            <div class="loading"></div>
             <div class="next-share">
-                <input type="button" id="getNew" name="newQuote" value="New Quote">
-                <input type="button" name="twitter" id="tweet" value="Twitter Share">
+                <a id="getNew" href="#">New Quote</a>
+                <a id="tweet" href="#">Tweet Me</a>
             </div>
         </div>
     </div>
